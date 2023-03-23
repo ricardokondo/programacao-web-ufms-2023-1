@@ -1,5 +1,5 @@
-# progracao-web-ufms-2023-1
-Repositório para a entrega de atividades apresentadas na disciplina de programação para a web da UFMS 2023/1
+# Progração para Web - FACOM/UFMS 2023-1
+Repositório para a entrega de atividades apresentadas na disciplina de Programação para Web pela FACOM/UFMS 2023/1 e ministrada pelo prof. Ricardo Masao Kondo.
 
 ### Links Úteis:
 - [Gerando uma nova chave SSH e adicionando-a ao agente SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
