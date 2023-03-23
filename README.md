@@ -3,6 +3,7 @@ Repositório para a entrega de atividades apresentadas na disciplina de Programa
 
 ### Links Úteis:
 - [Gerando uma nova chave SSH e adicionando-a ao agente SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+  - Caso tenha dúvidas em cadastrar uma chave SSH, [clique aqui neste link](https://www.youtube.com/watch?v=en1dycYtL48&ab_channel=tecnologiaemvideo) para visualizar um vídeo configurando a chave SSH
 - [Utilizaçao do Git](https://engsoftmoderna.info/capAp.html)
 
 
