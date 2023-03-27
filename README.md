@@ -8,8 +8,8 @@ Repositório para a entrega de atividades apresentadas na disciplina de Programa
 Todas as atividades serão adicionadas no repositório disponibilizado no GitHub até a liberação o AVA da disciplina.
 O repositório da disciplina para envio das atividades: 
 
- -- [Link para acessar o repositório](https://github.com/ricardokondo/progracao-web-ufms-2023-1)
- -- [Link para slides aula](https://drive.google.com/drive/folders/1seMnTWdAoPg6crAYSfk_tP-nMpQECRo5?usp=share_link)
+ - [Link para acessar o repositório](https://github.com/ricardokondo/progracao-web-ufms-2023-1)
+ - [Link para slides aula](https://drive.google.com/drive/folders/1seMnTWdAoPg6crAYSfk_tP-nMpQECRo5?usp=share_link)
 
 O aluno deve seguir as seguintes instruções para envio das atividades:
 1. O aluno deverá clonar o repositório. 
