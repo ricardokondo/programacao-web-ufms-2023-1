@@ -1,4 +1,4 @@
-# Progração para Web - FACOM/UFMS 2023-1
+# Programação para Web - FACOM/UFMS 2023-1
 Repositório para a entrega de atividades apresentadas na disciplina de Programação para Web pela FACOM/UFMS 2023/1 e ministrada pelo prof. Ricardo Masao Kondo.
 
 -----------
