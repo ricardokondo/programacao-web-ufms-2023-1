@@ -1,0 +1,42 @@
+html {
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+h1 {
+    font-size: medium;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.coluna1 {
+    width: 15%;
+
+}
+
+.coluna2 {
+    width: 50%;
+}
+
+table, td {
+    font-size: medium;
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: baseline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: larger;
+}
