@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@300;400;500&display=swap');
+
+:root{
+    --cor-background-body1: #3e3bffd8;
+    --cor-background-body2: #ff3636da;
+    --cor-box-shadow:  rgba(0, 0, 0, .5);
+    --cor-relogio-div: #fff;
+    --cor-relogio-background-div: rgba(5,5,5,.9);
+    --cor-relogio-box-shadow-div: rgba(0,0,0,.7);
+}
+
+/*Zerar as configurações do css*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(120deg, var(--cor-background-body1) , var(--cor-background-body2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    position: absolute;
+    top: 160px;
+    
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 600px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 10px 20px var(--cor-box-shadow);
+}
+
+.relogio div{
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-relogio-div);
+    background: var(--cor-relogio-background-div);
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px var(--cor-box-shadow);
+    letter-spacing: 3px;
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo{
+    font-size: 10px;
+}
