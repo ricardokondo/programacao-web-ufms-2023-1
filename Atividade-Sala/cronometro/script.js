@@ -29,20 +29,12 @@ let seconds = 0;
 let milliseconds = 0;
 let interval;
 
-// Função para atualizar o display do cronometro no html.
-// Dica: use do método 'setInterval' para executá-lo a cada 50 milissegundos.
-function updateVisualization() {
-  // As próximas linhas buscam pelos respectivos espaços de hora, minuto, segundo e milissegundos
-  // Basta implementar a lógica e alterar o conteúdo (innerText) com os valores
-  document.getElementById("horas")[0];
-  document.getElementById("minutos")[0];
-  document.getElementById("segundos")[0];
-  document.getElementById("milissegundo")[0];
-}
+//  a cada 50 milissegundos.
 
 // Função executada quando o botão 'Iniciar' é clicado
 // - se o cronometro estiver parado, iniciar contagem.
 // - se estiver ativo, reiniciar a contagem
+// Dica: use do método 'setInterval' para executá-lo
 function start() {
   // TODO (implementar)
 }
@@ -60,7 +52,9 @@ function stop() {
   // TODO (implementar)
 }
 
-//Função que executa os cálculos de atualização do tempo do cronômetro
+//Função que executa os cálculos de atualização do tempo do cronômetro e atualiza o display do cronometro no html.
+// As próximas linhas buscam pelos respectivos espaços de hora, minuto, segundo e milissegundos
+// Basta implementar a lógica e alterar o conteúdo (innerText) com os valores
 function timer() {
   // TODO (implementar)
 }

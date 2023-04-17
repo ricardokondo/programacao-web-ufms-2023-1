@@ -29,17 +29,6 @@ let seconds = 0;
 let milliseconds = 0;
 let interval;
 
-// Função para atualizar o display do cronometro no html.
-// Dica: use do método 'setInterval' para executá-lo a cada 50 milissegundos.
-function updateVisualization() {
-  // As próximas linhas buscam pelos respectivos espaços de hora, minuto, segundo e milissegundos
-  // Basta implementar a lógica e alterar o conteúdo (innerText) com os valores
-  document.getElementById("horas")[0];
-  document.getElementById("minutos")[0];
-  document.getElementById("segundos")[0];
-  document.getElementById("milissegundo")[0];
-}
-
 // Função executada quando o botão 'Iniciar' é clicado
 // - se o cronometro estiver parado, iniciar contagem.
 // - se estiver ativo, reiniciar a contagem
@@ -54,6 +43,15 @@ function start() {
 // - se o cronometro estiver ativo, reiniciar contagem
 // - se estiver parado, zerar e permanecer zerado
 function reset() {
+  // zerar o intervalo
+  clearInterval(interval);
+  // zerar as variáveis
+  hours = 0;
+  minutes = 0;
+  seconds = 0;
+  milliseconds = 0;
+
+  // zerar as informações de apresentação do display
   document.getElementById("horas").innerText = "00";
   document.getElementById("minutos").innerText = "00";
   document.getElementById("segundos").innerText = "00";
@@ -66,8 +64,13 @@ function stop() {
   clearInterval(interval);
 }
 
+// Função para atualizar o display do cronometro no html.
+// Dica: use do método 'setInterval' para executá-lo a cada 50 milissegundos.
+// As próximas linhas buscam pelos respectivos espaços de hora, minuto, segundo e milissegundos
+// Basta implementar a lógica e alterar o conteúdo (innerText) com os valores
+
 function timer() {
-  milliseconds++;
+  milliseconds += 10;
   if (milliseconds == 1000) {
     seconds++;
     milliseconds = 0;
@@ -97,9 +100,7 @@ function twoDigits(digit) {
 
 function threeDigits(digit) {
   if (digit < 100) {
-    return "0" + digit;
-  } else if (digit < 10) {
-    return "00" + digit;
+    return `${digit}`.padStart(3, "0");
   } else {
     return digit;
   }
