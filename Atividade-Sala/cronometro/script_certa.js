@@ -81,14 +81,21 @@ function timer() {
     }
   }
 
-  document.getElementById("horas").innerText = validateDigits(hours);
-  document.getElementById("minutos").innerText = validateDigits(minutes);
-  document.getElementById("segundos").innerText = validateDigits(seconds);
-  document.getElementById("milissegundo").innerText =
-    validateDigits(milliseconds);
+  document.getElementById("horas").innerText = twoDigits(hours);
+  document.getElementById("minutos").innerText = twoDigits(minutes);
+  document.getElementById("segundos").innerText = twoDigits(seconds);
+  document.getElementById("milissegundo").innerText = threeDigits(milliseconds);
 }
 
-function validateDigits(digit) {
+function twoDigits(digit) {
+  if (digit < 10) {
+    return "0" + digit;
+  } else {
+    return digit;
+  }
+}
+
+function threeDigits(digit) {
   if (digit < 100) {
     return "0" + digit;
   } else if (digit < 10) {

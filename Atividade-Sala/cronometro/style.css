@@ -30,7 +30,8 @@ body{
 
 h1{
     position: absolute;
-    top: 160px; 
+    display: flex;
+    top: 200px; 
 }
 
 .relogio{
@@ -74,7 +75,7 @@ h1{
 
 .controles button{
   display: inline;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: bold;
   min-width: 100px;
   padding: 5px 0;
@@ -87,6 +88,7 @@ h1{
 
 button:hover{
     background-color: var(--cor-botao-hover);
+    color: black;
 }
 
 .start-btn{
