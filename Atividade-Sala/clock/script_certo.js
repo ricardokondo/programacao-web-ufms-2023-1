@@ -33,9 +33,12 @@ function time() {
   if (seconds < 10) {
     seconds = "0" + seconds;
   }
-  horas.textContent = hours;
-  minutos.textContent = minutes;
-  segundos.textContent = seconds;
+  //horas.textContent = hours;
+  //minutos.textContent = minutes;
+  //segundos.textContent = seconds;
+  document.getElementById("horas").innerText = hours;
+  document.getElementById("minutos").innerText = minutes;
+  document.getElementById("segundos").innerText = seconds;
 }
 
 /** Chamada da função de time para funcionar o relógio*/
