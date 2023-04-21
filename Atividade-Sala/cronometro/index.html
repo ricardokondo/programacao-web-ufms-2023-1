@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <h1 class="h2">Timer Programação Web</h1>
+    <div class="relogio">
+      <div class="numeros">
+        <span id="horas">00</span>
+        <span class="tempo">Horas</span>
+      </div>
+      <div class="numeros">
+        <span id="minutos">00</span>
+        <span class="tempo">Minutos</span>
+      </div>
+      <div class="numeros">
+        <span id="segundos">00</span>
+        <span class="tempo">Segundos</span>
+      </div>
+      <div class="numeros">
+        <span id="milissegundo">000</span>
+        <span class="tempo">Milissegundos</span>
+      </div>
+      <div class="controles">
+        <button class="start-btn" onclick="start()">Iniciar</button>
+        <button class="pause-btn" onclick="stop()">Pausar</button>
+        <button class="reset-btn" onclick="reset()">Reiniciar</button>
+      </div>
+    </div>
+
+    <script src="script_certa.js"></script>
+  </body>
+</html>
