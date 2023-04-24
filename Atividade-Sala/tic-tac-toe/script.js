@@ -28,8 +28,10 @@ let options = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
 let running = false;
 
+// Chamada da função para inicializar o jogo
 initializeGame();
 
+// Insira aqui a função para a inicialização do jogo
 function initializeGame() {
   cells.forEach((cell) => cell.addEventListener("click", cellClicked));
   restartBtn.addEventListener("click", restartGame);
