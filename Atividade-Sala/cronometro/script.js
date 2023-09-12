@@ -14,47 +14,59 @@
  *     matemáticas.
  *
  *  Depois de computar os valores de milisegundos, segundos, minutos e horas,
- *  atualize o HTML chamando o método updateVisualization(). Para isso,
+ *  atualize o HTML chamando o método "document.getElementById". Para isso,
  *  finalize a implementação simplesmente colocando os valores dentro dos elementos
- *  usando do atributo innerHTML dos elementos retornados.
+ *  usando do atributo innerHTML ou innerText dos elementos retornados.
  *
  *  Essa atualização deve ser feita usando o método 'setInterval' a pelo menos 10ms.
  *  Esse método retorna uma referência tal que pode ser usada por 'clearInterval'
  *  para interromper a execução a qualquer momento.
  */
 
-let hours = 0;
-let minutes = 0;
-let seconds = 0;
-let milliseconds = 0;
-let interval;
+/*1. Variáveis de Controle:
+   - "hours", "minutes", "seconds" e "milliseconds" são variáveis globais que mantêm o tempo atual no cronômetro.
+   - "interval" é uma variável global que será usada para armazenar a referência ao intervalo que atualiza o cronômetro a cada 10 milissegundos.*/
 
-//  a cada 50 milissegundos.
+// TODO (implementar)
 
-// Função executada quando o botão 'Iniciar' é clicado
-// - se o cronometro estiver parado, iniciar contagem.
-// - se estiver ativo, reiniciar a contagem
-// Dica: use do método 'setInterval' para executá-lo
+/*
+2. Função "start()":
+   - A função "start()" é chamada quando o usuário deseja iniciar o cronômetro, quando o botão 'Iniciar' é clicado.
+   - Primeiro, a função "stop()" é chamada para garantir que qualquer intervalo de atualização anterior seja cancelado.
+   - Em seguida, um novo intervalo é configurado usando "setInterval". Ele chama a função "timer()" a cada 10 milissegundos (ou seja, a cada 10 milissegundos, o cronômetro é atualizado).
+    - Dica: use do método 'setInterval' para executá-lo
+*/
 function start() {
   // TODO (implementar)
 }
 
-// Função executada quando o botão 'Reiniciar' é clicado
-// - se o cronometro estiver ativo, reiniciar contagem
-// - se estiver parado, zerar e permanecer zerado
+/* 3. Função "reset()":
+   - A função "reset()" é chamada quando o usuário deseja redefinir o cronômetro, ou seja, quando o botão 'Reiniciar' é clicado:
+    - se o cronometro estiver ativo, reiniciar contagem
+    - se estiver parado, zerar e permanecer zerado
+   - Ela começa por cancelar qualquer intervalo de atualização existente usando "clearInterval(interval)".
+   - Em seguida, todas as variáveis de controle (horas, minutos, segundos e milissegundos) são redefinidas para zero.
+   - Também são atualizadas as informações de exibição no HTML, definindo o conteúdo dos elementos com IDs "horas", "minutos", "segundos" e "milissegundo" para "00", de modo que o cronômetro seja reiniciado.
+*/
 function reset() {
   // TODO (implementar)
 }
 
-// Função executada quando o botão 'Parar' é clicado
-// - se o cronometro estiver ativo, parar na contagem atual
+/* 4. Função "stop()":
+   - A função "stop()" é chamada quando o usuário deseja parar o cronômetro, ou seja, quando o botão 'Parar' é clicado:
+      - se o cronometro estiver ativo, parar na contagem atual.
+   - Ela simplesmente cancela o intervalo de atualização existente usando "clearInterval(interval)".
+ */
 function stop() {
   // TODO (implementar)
 }
 
-//Função que executa os cálculos de atualização do tempo do cronômetro e atualiza o display do cronometro no html.
-// As próximas linhas buscam pelos respectivos espaços de hora, minuto, segundo e milissegundos
-// Basta implementar a lógica e alterar o conteúdo (innerText) com os valores
+/*5. Função "timer()":
+   - A função "timer()" é chamada a cada 10 milissegundos pelo intervalo configurado na função "start()".
+   - Ela incrementa a variável "milliseconds" em 10 a cada chamada.
+   - Se "milliseconds" atingir 1000 (1 segundo), a variável "seconds" é incrementada em 1 e "milliseconds" é redefinida para zero. Isso é repetido para os minutos e as horas, se necessário.
+   - Em seguida, os elementos HTML com IDs "horas", "minutos", "segundos" e "milissegundo" são atualizados com os valores atuais do cronômetro usando as funções auxiliares para garantir que sejam exibidos com duas ou três casas decimais, conforme necessário.
+   - Basta implementar a lógica e alterar o conteúdo (innerText ou innerHTML) com os valores */
 function timer() {
   // TODO (implementar)
 }
